@@ -1,4 +1,4 @@
 # Voorraadmodule
-Voorraadmodule voor PTI
+Voorraadmodule voor PTI.
 
 Gemaakt door Harold, Daniel en Charlotte.
