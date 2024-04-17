@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AD6946CF-928F-43D3-B5C9-736D0062684C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Voorraad.WebApp", "src\Voorraad.WebApp\Voorraad.WebApp.csproj", "{5BD1C16B-3CFD-4B4A-A47B-62E0865B1C97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BD1C16B-3CFD-4B4A-A47B-62E0865B1C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD1C16B-3CFD-4B4A-A47B-62E0865B1C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD1C16B-3CFD-4B4A-A47B-62E0865B1C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD1C16B-3CFD-4B4A-A47B-62E0865B1C97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5BD1C16B-3CFD-4B4A-A47B-62E0865B1C97} = {AD6946CF-928F-43D3-B5C9-736D0062684C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E31EB06B-E79A-4CF6-93B3-6ACB9D565F92}
+	EndGlobalSection
+EndGlobal
