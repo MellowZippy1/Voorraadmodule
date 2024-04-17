@@ -23,13 +23,13 @@ namespace Voorraad.WebApp.Pages
             {
                 // Your existing code to retrieve data
                 List<string> results = new List<string>(); // Assuming your data is a list of strings
-                var connString = "Host=localhost;Port=5432;Username=postgres;Password=britt;Database=Voorraadmodule";
+                var connString = "Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=postgres";
 
                 await using var conn = new NpgsqlConnection(connString);
                 await conn.OpenAsync();
 
                 // Retrieve all rows
-                await using (var cmd = new NpgsqlCommand("SELECT quantity FROM packages WHERE monteurid = @monteurID", conn))
+                await using (var cmd = new NpgsqlCommand("SELECT productid FROM packages WHERE mechanicid = @monteurID", conn))
                 {
                     cmd.Parameters.AddWithValue("@monteurID", MonteurID);
                     await using (var reader = await cmd.ExecuteReaderAsync())

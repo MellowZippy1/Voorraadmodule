@@ -6,12 +6,15 @@
 
 <div class="text-center">
     <h1 class="display-4">Success!</h1>
-    <p>Your operation was successful.</p>
     <h2>Results from Monteur Page:</h2>
     <ul>
         @foreach (var result in Model.TempData)
         {
-            <li>@result</li>
+            // <li>@result.Key, @result.Value</li>
+            @foreach (var elem in (string[])result.Value)
+            {
+                <li>@elem</li>
+            }
         }
     </ul>
 </div>
