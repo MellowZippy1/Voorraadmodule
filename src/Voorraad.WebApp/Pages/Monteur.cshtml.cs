@@ -1,10 +1,11 @@
+using System;
+using System.Collections.Generic;
+using System.Text.Json;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Npgsql;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Voorraad.WebApp.Pages
 {
@@ -21,29 +22,36 @@ namespace Voorraad.WebApp.Pages
         {
             try
             {
-                // Your existing code to retrieve data
-                List<string> results = new List<string>(); // Assuming your data is a list of strings
+                List<string[]> results = new List<string[]>(); 
                 var connString = "Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=postgres";
 
                 await using var conn = new NpgsqlConnection(connString);
                 await conn.OpenAsync();
 
-                // Retrieve all rows
-                await using (var cmd = new NpgsqlCommand("SELECT productid FROM packages WHERE mechanicid = @monteurID", conn))
+                await using (var cmd = new NpgsqlCommand("SELECT * FROM packages WHERE mechanicid = @monteurID AND in_use = TRUE", conn))
                 {
                     cmd.Parameters.AddWithValue("@monteurID", MonteurID);
                     await using (var reader = await cmd.ExecuteReaderAsync())
                     {
                         while (await reader.ReadAsync())
                         {
-                            var fieldValue = reader.GetInt32(0); // Read the integer value from the database
-                            results.Add(fieldValue.ToString()); // Convert the integer to a string before adding it to the results list
+                            var fieldValue = reader.GetInt32(0);
+                            
+                            results.Add(new string[] { 
+                                fieldValue.ToString(), 
+                                reader.GetInt32(1).ToString(),  
+                                reader.GetInt32(2).ToString(),
+                                reader.GetInt32(3).ToString(),
+                                reader.GetBoolean(4).ToString(),
+                                reader.GetString(5)
+                            });
                         }
                     }
                 }
 
-                TempData["MonteurResults"] = results; // Store results in TempData
-                return RedirectToPage("/SuccessPage"); // Redirect to SuccessPage
+                TempData["MonteurResults"] = JsonSerializer.Serialize(results);
+
+                return RedirectToPage("/SuccessPage");
             }
             catch (Exception ex)
             {

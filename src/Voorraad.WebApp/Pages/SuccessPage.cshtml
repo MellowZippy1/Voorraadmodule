@@ -6,15 +6,27 @@
 
 <div class="text-center">
     <h1 class="display-4">Success!</h1>
-    <h2>Results from Monteur Page:</h2>
-    <ul>
-        @foreach (var result in Model.TempData)
-        {
-            // <li>@result.Key, @result.Value</li>
-            @foreach (var elem in (string[])result.Value)
+    @if (TempData["MonteurResults"] != null)
+    {
+        var monteurResultsJson = TempData["MonteurResults"] as string;
+        var monteurResults = Newtonsoft.Json.JsonConvert.DeserializeObject<List<string[]>>(monteurResultsJson);
+
+        <h2>Results from Monteur Page:</h2>
+        <ul>
+            @foreach (var result in monteurResults)
             {
-                <li>@elem</li>
+                <li>
+                    @foreach (var item in result)
+                    {
+                        @item
+                    }
+                </li>
             }
-        }
-    </ul>
+        </ul>
+    }
+    else
+    {
+        <p>No results from Monteur Page.</p>
+    }
 </div>
+
