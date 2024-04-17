@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj": {}
+    "D:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj": {}
   },
   "projects": {
-    "F:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj": {
+    "D:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
+        "projectUniqueName": "D:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
         "projectName": "Voorraad.WebApp",
-        "projectPath": "F:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
+        "projectPath": "D:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
         "packagesPath": "C:\\Users\\Basic\\.nuget\\packages\\",
-        "outputPath": "F:\\Voorraadmodule\\src\\Voorraad.WebApp\\obj\\",
+        "outputPath": "D:\\Voorraadmodule\\src\\Voorraad.WebApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Basic\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Basic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

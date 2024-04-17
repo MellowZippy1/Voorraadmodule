@@ -1,0 +1,17 @@
+-@page
+@model Voorraad.WebApp.Pages.SuccessPageModel
+@{
+    ViewData["Title"] = "Success Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Success!</h1>
+    <p>Your operation was successful.</p>
+    <h2>Results from Monteur Page:</h2>
+    <ul>
+        @foreach (var result in Model.TempData)
+        {
+            <li>@result</li>
+        }
+    </ul>
+</div>
