@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xFt+pwHJ0Z706SgV9OH1CRORLzG3ic/g9XZm2WEv9RDeGOY16fFVz+ytyTyRrAFapMF6vOmr6V75NFw2//xayA==",
+  "dgSpecHash": "jLyUK7WvF36s2UxdJz96Ailv4/N7lb71bmB1MOEqJhbeKKUSz/kFrkw1++kOqjJN6UeDySflhDvytW2AnrHPnA==",
   "success": true,
-  "projectFilePath": "F:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
+  "projectFilePath": "/Users/haroldponte/Voorraadmodule/src/Voorraad.WebApp/Voorraad.WebApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Basic\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Basic\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Basic\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Basic\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512"
+    "/Users/haroldponte/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/haroldponte/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/Users/haroldponte/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/haroldponte/.nuget/packages/npgsql/8.0.2/npgsql.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }

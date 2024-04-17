@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj": {}
+    "/Users/haroldponte/Voorraadmodule/src/Voorraad.WebApp/Voorraad.WebApp.csproj": {}
   },
   "projects": {
-    "F:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj": {
+    "/Users/haroldponte/Voorraadmodule/src/Voorraad.WebApp/Voorraad.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
+        "projectUniqueName": "/Users/haroldponte/Voorraadmodule/src/Voorraad.WebApp/Voorraad.WebApp.csproj",
         "projectName": "Voorraad.WebApp",
-        "projectPath": "F:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
-        "packagesPath": "C:\\Users\\Basic\\.nuget\\packages\\",
-        "outputPath": "F:\\Voorraadmodule\\src\\Voorraad.WebApp\\obj\\",
+        "projectPath": "/Users/haroldponte/Voorraadmodule/src/Voorraad.WebApp/Voorraad.WebApp.csproj",
+        "packagesPath": "/Users/haroldponte/.nuget/packages/",
+        "outputPath": "/Users/haroldponte/Voorraadmodule/src/Voorraad.WebApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Basic\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/haroldponte/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -71,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
