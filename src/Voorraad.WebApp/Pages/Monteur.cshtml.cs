@@ -28,7 +28,7 @@ namespace Voorraad.WebApp.Pages
                 await using var conn = new NpgsqlConnection(connString);
                 await conn.OpenAsync();
 
-                await using (var cmd = new NpgsqlCommand("SELECT * FROM packages WHERE mechanicid = @monteurID AND in_use = TRUE", conn))
+                await using (var cmd = new NpgsqlCommand("SELECT packages.*, products.productname FROM packages JOIN products ON packages.productid = products.productid WHERE packages.mechanicid = @monteurID AND packages.in_use = TRUE;", conn))
                 {
                     cmd.Parameters.AddWithValue("@monteurID", MonteurID);
                     await using (var reader = await cmd.ExecuteReaderAsync())
@@ -43,7 +43,8 @@ namespace Voorraad.WebApp.Pages
                                 reader.GetInt32(2).ToString(),
                                 reader.GetInt32(3).ToString(),
                                 reader.GetBoolean(4).ToString(),
-                                reader.GetString(5)
+                                reader.GetString(5),
+                                reader.GetString(6)
                             });
                         }
                     }

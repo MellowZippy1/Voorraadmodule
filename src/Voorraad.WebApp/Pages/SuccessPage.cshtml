@@ -16,22 +16,20 @@
             <table class="mx-auto table table-hover table-bordered" border="1">
                 <thead>
                     <tr class="mx-auto" border="1">
-                        <th>Package ID</th>
-                        <th>Product ID</th>
-                        <th>Mechanic ID</th>
+                        <th>#</th>
+                        <th>Product</th>
                         <th>Quantity</th>
                         <th>Note</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var result in monteurResults)
+                    @for (int i = 0, j = 1; i < monteurResults.Count; i++, j++)
                     {
                         <tr class="mx-auto" border="1">
-                            <td>@result[0]</td>
-                            <td>@result[1]</td>
-                            <td>@result[2]</td>
-                            <td>@result[3]</td>
-                            <td>@result[5]</td>
+                            <td>@j</td>
+                            <td>@monteurResults[i][6]</td>
+                            <td>@monteurResults[i][3]</td>
+                            
                         </tr> 
                     }
                 </tbody>
