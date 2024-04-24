@@ -235,19 +235,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/haroldponte/.nuget/packages/": {}
+    "C:\\Users\\charl\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/haroldponte/Voorraadmodule/src/Voorraad.WebApp/Voorraad.WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
       "projectName": "Voorraad.WebApp",
-      "projectPath": "/Users/haroldponte/Voorraadmodule/src/Voorraad.WebApp/Voorraad.WebApp.csproj",
-      "packagesPath": "/Users/haroldponte/.nuget/packages/",
-      "outputPath": "/Users/haroldponte/Voorraadmodule/src/Voorraad.WebApp/obj/",
+      "projectPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
+      "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/haroldponte/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -265,6 +265,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -299,7 +304,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
