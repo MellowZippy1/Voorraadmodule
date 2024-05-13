@@ -240,11 +240,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\Voorraad.WebApp.csproj",
       "projectName": "Voorraad.WebApp",
-      "projectPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
+      "projectPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\Voorraad.WebApp.csproj",
       "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.WebApp\\obj\\",
+      "outputPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -307,5 +307,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Npgsql' 8.0.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c",
+      "libraryId": "Npgsql",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

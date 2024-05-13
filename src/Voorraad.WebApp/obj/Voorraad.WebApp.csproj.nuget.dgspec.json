@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj": {}
+    "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\Voorraad.WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj": {
+    "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\Voorraad.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\Voorraad.WebApp.csproj",
         "projectName": "Voorraad.WebApp",
-        "projectPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
+        "projectPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\Voorraad.WebApp.csproj",
         "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.WebApp\\obj\\",
+        "outputPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config"

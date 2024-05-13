@@ -18,6 +18,7 @@ namespace Voorraad.WebApp.Pages
             _logger = logger;
         }
 
+        
         public async Task<IActionResult> OnPostAsync(int MonteurID)
         {
             try
@@ -57,6 +58,31 @@ namespace Voorraad.WebApp.Pages
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while processing the form submission.");
+                ModelState.AddModelError(string.Empty, "An error occurred while processing your request.");
+                return Page();
+            }
+        }
+
+        public async Task<IActionResult> RemovePackageAsync (int packageId)
+        {
+            try
+            {
+                var connString = "Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=postgres";
+
+                await using var conn = new NpgsqlConnection(connString);
+                await conn.OpenAsync();
+
+                await using (var cmd = new NpgsqlCommand("DELETE FROM packages WHERE packageid = @packageId", conn))
+                {
+                    cmd.Parameters.AddWithValue("@packageID", packageId);
+                    await cmd.ExecuteNonQueryAsync();
+                }
+
+                return RedirectToPage("/SuccesPage");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while processing the remove operation.");
                 ModelState.AddModelError(string.Empty, "An error occurred while processing your request.");
                 return Page();
             }
