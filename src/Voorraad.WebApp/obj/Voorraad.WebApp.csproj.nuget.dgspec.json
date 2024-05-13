@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\Voorraad.WebApp.csproj": {}
+    "P:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\Voorraad.WebApp.csproj": {
+    "P:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\Voorraad.WebApp.csproj",
+        "projectUniqueName": "P:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
         "projectName": "Voorraad.WebApp",
-        "projectPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\Voorraad.WebApp.csproj",
-        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\charl\\Documents\\GitHub\\Voorraadmodule\\src\\Voorraad.Webapp\\obj\\",
+        "projectPath": "P:\\Voorraadmodule\\src\\Voorraad.WebApp\\Voorraad.WebApp.csproj",
+        "packagesPath": "C:\\Users\\Basic\\.nuget\\packages\\",
+        "outputPath": "P:\\Voorraadmodule\\src\\Voorraad.WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Basic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

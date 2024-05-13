@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "P:\\Voorraadmodule\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\Voorraadmodule\\src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\Voorraadmodule\\src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SuccessPage.cshtml.cs",
+              "DocumentMoniker": "P:\\Voorraadmodule\\src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml.cs",
+              "RelativeDocumentMoniker": "src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml.cs",
+              "ToolTip": "P:\\Voorraadmodule\\src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml.cs",
+              "RelativeToolTip": "src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T19:10:46.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SuccessPage.cshtml",
+              "DocumentMoniker": "P:\\Voorraadmodule\\src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml",
+              "RelativeDocumentMoniker": "src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml",
+              "ToolTip": "P:\\Voorraadmodule\\src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml",
+              "RelativeToolTip": "src\\Voorraad.WebApp\\Pages\\SuccessPage.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T18:59:43.938Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

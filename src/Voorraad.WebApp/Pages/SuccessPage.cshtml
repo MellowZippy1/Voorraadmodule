@@ -12,51 +12,44 @@
         var monteurResultsJson = TempData["MonteurResults"] as string;
         var monteurResults = Newtonsoft.Json.JsonConvert.DeserializeObject<List<string[]>>(monteurResultsJson);
 
-        <h2>Results from Monteur Page:</h2>
-        <div class="text-center">
-            <table style="color:purple;" class="mx-auto table table-hover table-bordered" border="1">
-                <thead>
-                    <tr class="mx-auto" border="1">
-                        <th>#</th>
-                        <th>Package ID</th>
-                        <th>Product ID</th>
-                        <th>Product Name</th>
-                        <th>Quantity</th>
-                        <th>Note</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @* @for (int i = 0, j = 1; i < monteurResults.Count; i++, j++)
+    <h2>Results from Monteur Page:</h2>
+    <div class="text-center">
+        <table style="color:purple;" class="mx-auto table table-hover table-bordered" border="1">
+            <thead>
+                <tr class="mx-auto" border="1">
+                    <th>#</th>
+                    <th>Package ID</th>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Note</th>
+                    <th>Delete!</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0, j = 1; i < monteurResults.Count; i++, j++)
                     {
-                        <tr class="mx-auto" border="1">
-                            <td>@j</td>
-                            <td>@monteurResults[i][6]</td>
-                            <td>@monteurResults[i][3]</td>
-                            
-                        </tr> 
-                    } *@
-                    @foreach (var package in JsonSerializer.Deserialize<List<string[]>>(TempData["MonteurResults"].ToString()))
-                    {
-                        <tr>
-                            @foreach (var item in package)
-                            {
-                                <td>@item</td>
-                            }
-                            <td>
-                                <form method="post" asp-page-handler="RemovePackageAsync">
-                                    <input type="hidden" name="packageId" value="@package[0]" />
-                                    <button type="submit" class="btn btn-danger"> Delete</button>
-                                </form>
-                            </td>
-                        </tr>
+                <tr class="mx-auto" border="1">
+                    <td>@j</td>
+                    <td>@monteurResults[i][0]</td>
+                    <td>@monteurResults[i][1]</td>
+                    <td>@monteurResults[i][6]</td>
+                    <td>@monteurResults[i][3]</td>
+                    <td>@monteurResults[i][4]</td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" name="index" value="@i" />
+                            <button type="submit" class="button" asp-page-handler="BtnLogin_Click1">Delete</button>
+                        </form>
+                    </td>
+                </tr>
                     }
-                </tbody>
-            </table>
-        </div>
+            </tbody>
+        </table>
+    </div>
     }
     else
     {
-        <p>No results from Monteur Page.</p>
+    <p>No results from Monteur Page.</p>
     }
 </div>
-
