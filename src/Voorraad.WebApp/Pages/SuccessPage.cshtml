@@ -6,13 +6,13 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Success!</h1>
+    <h1 class="display-4">Welcome</h1>
     @if (TempData["MonteurResults"] != null)
     {
         var monteurResultsJson = TempData["MonteurResults"] as string;
         var monteurResults = Newtonsoft.Json.JsonConvert.DeserializeObject<List<string[]>>(monteurResultsJson);
 
-    <h2>Results from Monteur Page:</h2>
+    <h2>Inventory</h2>
     <div class="text-center">
         <table style="color:purple;" class="mx-auto table table-hover table-bordered" border="1">
             <thead>
@@ -52,4 +52,13 @@
     {
     <p>No results from Monteur Page.</p>
     }
+
+    <h2>Add Product:</h2>
+    <form method="post">
+        <div class="form-group">
+            <label for="productName">Product Name:</label>
+            <input type="text" class="form-control w-25 mx-auto" id="productName" name="NewProduct.ProductName">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
 </div>

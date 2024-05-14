@@ -12,11 +12,39 @@ namespace Voorraad.WebApp.Pages
         {
             _logger = logger;
         }
+
+         public ProductModel NewProduct { get; set; }
         public List<string[]> MonteurResults { get; set; }
 
         public void OnGet()
         {
             // This method is executed when the page is requested via HTTP GET
+        }
+
+         public async void OnPostAddProductAsync()
+        {
+            try
+            {
+                var connString = "Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=postgres";
+
+                using var conn = new NpgsqlConnection(connString);
+                await conn.OpenAsync();
+
+                // Assuming you have a table named 'products' with columns 'product_name', 'price', etc.
+                using (var cmd = new NpgsqlCommand("INSERT INTO products (product_name) VALUES (@productName)", conn))
+                {
+                    cmd.Parameters.AddWithValue("@productName", NewProduct.ProductName);
+                    await cmd.ExecuteNonQueryAsync();
+                }
+
+                RedirectToPage("/SuccessPage");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while processing the add operation.");
+                ModelState.AddModelError(string.Empty, "An error occurred while processing your request.");
+                Page();
+            }
         }
 
         public void OnPostBtnLogin_Click1(int index)
@@ -35,7 +63,7 @@ namespace Voorraad.WebApp.Pages
                     cmd.ExecuteNonQueryAsync();
                 }
 
-                RedirectToPage("/SuccesPage");
+                // RedirectToPage("/SuccesPage");
             }
             catch (Exception ex)
             {
@@ -45,5 +73,11 @@ namespace Voorraad.WebApp.Pages
             }
         }
 
+    }
+
+    public class ProductModel
+    {
+        public string ProductName { get; set; }
+        public decimal Price { get; set; }
     }
 }
